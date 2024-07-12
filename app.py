@@ -16,6 +16,7 @@ pio.renderers.default='browser'
 ringo = pd.read_csv('22ringo.csv')
 
 app = Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server=app.server
 
 app.layout = dbc.Container([
 #First Row
