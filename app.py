@@ -29,7 +29,7 @@ app.layout = dbc.Container([
                    ],style = {'width':"6rem"}),
                  ]),
         
-        dbc.Col([html.H1("Quality Parameters using RINGO ",
+        dbc.Col([html.H1("Quality Parameters using RINGO (Year :2023) ",
                          className="text-left text-primary")],
                 width={'size':9}),
         
