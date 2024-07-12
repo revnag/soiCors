@@ -1,0 +1,11 @@
+# Exported from Render on 2024-06-30T14:52:38Z
+services:
+- type: web
+  name: rcg
+  runtime: python
+  repo: https://github.com/revnag/rcg
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:server
+version: "1"
