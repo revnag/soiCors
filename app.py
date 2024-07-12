@@ -29,7 +29,7 @@ app.layout = dbc.Container([
                    ],style = {'width':"6rem"}),
                  ]),
         
-        dbc.Col([html.H1("Quality Parameters using RINGO (Year :2023) ",
+        dbc.Col([html.H1("Quality Parameters using RINGO ",
                          className="text-left text-primary")],
                 width={'size':9}),
         
@@ -98,7 +98,7 @@ def update_graph(selected_site,selected_quality,selected_const):
                       color='CONST',
                       labels={
                      "CONST": "Satellite Constellation",
-                     "DOY": "Day Of Year",
+                     "DOY": "Day Of Year (2023)",
                      "MP1": "Multipath12"
                  },
                       title=f'{selected_quality} in {selected_site}'
