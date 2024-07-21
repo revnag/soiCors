@@ -16,9 +16,9 @@ import dash_bootstrap_components as dbc
 
 def get_dropdown_label_from_value(dropdown_value: str):
     value=['MP1','MP2','MP5','CRMP1','CRMP2','CRMP5','CRGf','CRMW','CRIOD' ]  
-    label=['Multipath12','Multipath21','Multipath15','Slips Ratio MP12',
-    'Slips Ratio MP21','Slips Ratio MP15','Slips Ratio GF','Slips Ratio MW',
-    'Slips Ratio IOD']
+    label=['Multipath12','Multipath21','Multipath15','Obs per Slip:MP12',
+    'Obs per Slip:MP21','Obs per Slip:MP15','Obs per Slip:GF','Obs per Slip:MW',
+    'Obs per Slip:IOD']
     for i in range(len(value)):
        if dropdown_value==value[i]:
            return label[i]
@@ -67,10 +67,10 @@ app.layout = dbc.Container([
                          'text-decoration': 'underline'}
                 ),
             dcc.Dropdown(id='quality-dropdown',options={'MP1':'Multipath12','MP2':
-                            'Multipath21','MP5':'Multipath15','CRMP1':'Slips Ratio MP12',
-                            'CRMP2':'Slips Ratio MP21','CRGf':'Slips Ratio GF',
-                            'CRMP5':'Slips Ratio MP15','CRMW':'Slips Ratio MW',
-                            'CRIOD':'Slips Ratio IOD'},value='MP1')
+                            'Multipath21','MP5':'Multipath15','CRMP1':'Obs per Slip:MP12',
+                            'CRMP2':'Obs per Slip:MP21','CRMP5':'Obs per Slip:MP15',
+                            'CRGF':'Obs per Slip:GF','CRMW':'Obs per Slip:MW',
+                            'CRIOD':'Obs per Slip:IOD'},value='MP1')
             ],width={'size': 3,'offset':0}),
         dbc.Col([
             html.H3('Choose Constellation (single/multi)'
