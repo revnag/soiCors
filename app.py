@@ -32,6 +32,7 @@ app = Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=[db
                             meta_tags=[{'name': 'viewport',
                             'content': 'width=device-width, initial-scale=1.0, maximum-scale=1.2, minimum-scale=0.5,'}]
                             )
+server=app.server
 # Layout section : Bootstrap               
 app.layout = dbc.Container([
 # First Row
