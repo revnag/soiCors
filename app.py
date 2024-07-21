@@ -15,7 +15,7 @@ import plotly.express as px
 import dash_bootstrap_components as dbc
 
 def get_dropdown_label_from_value(dropdown_value: str):
-    value=['MP1','MP2','MP5','CRMP1','CRMP2','CRMP5','CRGf','CRMW','CRIOD' ]  
+    value=['MP1','MP2','MP5','CRMP1','CRMP2','CRMP5','CRGF','CRMW','CRIOD' ]  
     label=['Multipath12','Multipath21','Multipath15','Obs per Slip:MP12',
     'Obs per Slip:MP21','Obs per Slip:MP15','Obs per Slip:GF','Obs per Slip:MW',
     'Obs per Slip:IOD']
