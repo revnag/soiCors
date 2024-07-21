@@ -124,7 +124,7 @@ def update_graph(selected_site,selected_quality,selected_const):
                       labels={
                      "CONST": "Satellite Constellation",
                      "DOY": "Day Of Year (2023)",
-                     'MP1':'Multipath12','MP2':'Multipath21','MP5':'Multipath15',
+                     'MP1':'Multipath12 (m)','MP2':'Multipath21 (m)','MP5':'Multipath15 (m)',
                      'CRMP1':'Obs per Slip:MP12','CRMP2':'Obs per Slip:MP21',
                      'CRMP5':'Obs per Slip:MP15','CRGF':'Obs per Slip:GF',
                       'CRMW':'Obs per Slip:MW','CRIOD':'Obs per Slip:IOD'
