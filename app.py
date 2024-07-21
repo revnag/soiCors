@@ -124,14 +124,12 @@ def update_graph(selected_site,selected_quality,selected_const):
                       labels={
                      "CONST": "Satellite Constellation",
                      "DOY": "Day Of Year (2023)",
-                     "MP1": "Multipath12","MP2":"Multipath21",'MP5':'Multipath15',
-                     'CRMP1':'Slips Ratio MP12','CRMP2':'Slips Ratio MP21',
-                     'CRGf':'Slips Ratio GF','CRMP5':'Slips Ratio MP15',
-                     'CRMW':'Slips Ratio MW', 'CRIOD':'Slips Ratio IOD'
+                     'MP1':'Multipath12','MP2':'Multipath21','MP5':'Multipath15',
+                     'CRMP1':'Obs per Slip:MP12','CRMP2':'Obs per Slip:MP21',
+                     'CRMP5':'Obs per Slip:MP15','CRGF':'Obs per Slip:GF',
+                      'CRMW':'Obs per Slip:MW','CRIOD':'Obs per Slip:IOD'
                       },
-                      
                       title=f' {mytitle} in {selected_site}',
-                      
                       )
      line_fig.update(layout=dict(title=dict(
          x=0.5,
